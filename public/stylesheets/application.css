@@ -1991,6 +1991,10 @@ input[type=number] {
   font-size: 19px;
 }
 
+.column-full {
+  padding-left: 15px;
+}
+
 .guidance {
   margin: 0 auto;
   padding: 45px 15px 0 15px;
@@ -2004,6 +2008,10 @@ input[type=number] {
   font-weight: 400;
   font-size: 19px;
   line-height: 1.4;
+}
+
+.team-image img {
+  max-width: 300px;
 }
 
 .admin {
@@ -2033,8 +2041,21 @@ input[type=number] {
   color: #ffffff;
 }
 
+.sign-in-link {
+  color: white;
+  margin-top: 30px;
+}
+
+.sign-in-link a {
+  color: white;
+}
+
 .button-hint {
   margin-top: 30px;
+}
+
+.bold-p {
+  font-weight: 700;
 }
 
 ul {
