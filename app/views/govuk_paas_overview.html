@@ -1,0 +1,210 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  Product name: GOV.UK Pay
+{% endblock %} 
+
+{% block content %}
+
+<body>
+<header class="product-style">
+<main id="content" role="main">
+
+    <div class="breadcrumbs">
+      <ol>
+        <li>
+          <a href="#"></a>
+        </li> 
+      </ol>
+    </div>
+  <div class="grid-row">
+      <div class="column-two-thirds">
+        <h1 class="heading-xlarge">Deploy and run government apps</h1>
+        <p> 
+          GOV.UK Platform as a Service (PaaS) is a quick, easy and cheap way to host government applications. It allows you to deploy and host your application in multiple languages and frameworks without building your own hosting infrastructure.</p>
+
+        <p> 
+         The PaaS manages all the necessary platform infrastructure for you – eg logging, monitoring, backing services, networking and high availability – so you can focus on building your digital services.</p>
+
+      <a class="button button-start" href="https://government-paas-developer-docs.readthedocs.io/en/latest/getting_started/quick_setup_guide/#setting-up-the-command-line" role="button" style="background-color: #fff; color: #005EA5;">Get started</a>
+      <p class="design-update">
+        Last updated: 8 days ago </p>
+    </div>
+  </div>
+  </main>
+</header>
+
+
+<main id="content" role="main">
+  <div class="grid-row">
+      <div class="column-two-thirds">
+        <h2 class="heading-large" id="1">Benefits of GOV.UK PaaS</h2>
+          <p>GOV.UK PaaS makes it easier for teams to deploy and run applications without having to build and manage their own infrastructure. This avoids unnecessary repetition across government – reducing the need for infrastructure and webops engineers to spend time  solving the same problems.</p> 
+      </div>
+  </div>
+    
+<div class="grid-row">
+        <div class="column-full">
+        <p class="bold-p">Benefits to service teams include:</p>
+        </div>
+
+      <div class="column-one-half">
+        <ul class="list list-bullet">
+          <li>save time and money associated with setting up a hosting infrastructure
+          <li>simple procurement process</li>
+          <li>accredited for information up to OFFICIAL</li>
+          <li>apps are not locked into a single cloud provider, so costs won’t escalate</li>
+          <li>source code is open</li>
+          <li>easy for development teams to manage their apps without support from the platform team</li>
+        </ul>
+      </div>
+
+      <div class="column-one-half">
+        <ul class="list list-bullet">
+          <li>deploy and run applications written in a range of languages and web frameworks</li>
+          <li>rapidly scale app instances</li>
+          <li>deployed across multiple data centres, making it resilient</li>
+          <li>full platform-level support</li>
+          <li>built on an open source platform (Cloud Foundry) and deployed to a public cloud
+          </li>
+        </ul>
+       </div>
+
+  </div>
+
+  <div class="grid-row">
+      <div class="column-half">
+      <hr>
+        <h2 class="heading-large" id="3">How it works</h2>
+          <p>Service teams manage the components that are unique to their applications. These are the user-facing front end apps, back end APIs, supporting backing services (like databases and caches), scheduled tasks and application security. It is also easy to ship logs from running apps to logging infrastructure of your choice.</p>
+
+          <p>The PaaS manages the platform components involved with hosting, such as infrastructure, platform logging and monitoring, provisioning backing services, securing the infrastructure, ensuring the platform is highly available.</p>
+
+          <p>Applications running on the platform are isolated from each other; they can’t read or change each other's code, data or logs.</p>
+      </div>
+
+      <div class="column-half">
+      <hr>
+        <h2 class="heading-large" id="3">How it’s built</h2>
+          <p>GOV.UK PaaS is built using the open source Cloud Foundry project and runs on Amazon Web Services (AWS). Users don’t have to interact with AWS directly; all interactions required to deploy and manage your applications are carried out through Cloud Foundry commands.</p>
+
+          <p>The platform can host applications written in multiple languages, including JVM languages, Python, Go, Ruby, PHP, and many frameworks, such as Rails, Node.js and Django.</p>
+
+          <p>You can find out more about how the PaaS is built and how it works by reading the <a href="https://government-paas-developer-docs.readthedocs.io/en/latest/">documentation</a>.</p>
+
+          <p>Find out more about <a href="#">available backing services</a>.</p>
+      </div>
+  </div>
+
+
+
+<!-- <div class="grid-row">
+      <div class="column-full">
+      <hr>
+        <h2 class="heading-large">Available backing services</h2>
+      </div>
+      <div class="column-two-thirds">
+          <p>At the moment, the PaaS lets you create a PostgreSQL database service (powered by AWS) and bind it to your app. You can choose between three sizes of database depending on how much data you store, and each size has a high availability version.</p>
+
+          <p>See the ‘What the PaaS will offer’ section below to see which backing services we’re planning on adding to the PaaS.</p>
+      </div>
+</div> -->
+
+<div class="grid-row">
+    <div class="column-full">
+    <hr>
+        <h2 class="heading-large">How you manage it</h2>
+    </div>
+      <div class="column-two-thirds">
+          <p>The PaaS is designed to be self-service, giving teams complete control over deploying, managing and changing their apps. This allows application teams to work and iterate quickly and means the platform team can focus exclusively on improving the platform itself.</p>
+          <p>To interact with the PaaS you use the Cloud Foundry command line. You can find out more about this by reading the documentation in the <a href="https://government-paas-developer-docs.readthedocs.io/en/latest/getting_started/quick_setup_guide/#setting-up-the-command-line">Quick Setup Guide</a>.</p>
+      </div>
+</div>
+
+<div class="grid-row">
+  <div class="column-half">
+  <hr>
+    <h2 class="heading-large">Technical requirements</h2>
+    <p>To be hosted by Government PaaS, your application must:</p>
+      <ul>
+        <li>follow the twelve-factor application principles - this will be the case if your app was written to be deployed to another PaaS like Heroku</li>
+        <li>not require any backing service apart from a database (currently the only service available is PostgreSQL)</li>
+        <li>not carry data at SECRET or above (we are working towards accreditation for Personal data)</li>
+        <li>be written in a language supported by the default Cloud Foundry buildpacks</li>
+      </ul>
+  </div>
+    <div class="column-half">
+    <hr>
+      <h2 class="heading-large">Support and cost</h2>
+        <p>The platform will be supported 24/7 by GDS, although application teams will continue to support their individual applications.</p>
+        <p>GDS absorbs the cost of building the platform and we pass on the running costs: you simply pay for the hosting, compute resource and backing services you use.</p>
+        <p>Please contact us for pricing details at:</p> <p><a href="#">gov-uk-paas-support@digital.cabinet-office.gov.uk</a>.</p>
+    </div> 
+</div>
+<div class="grid-row">
+  <div class="column-full">
+  <hr>
+      <h2 class="heading-large">What the PaaS will offer</h2>
+  </div>
+  <div class="column-two-thirds">
+      <p>The list below gives a general idea of how we expect the PaaS to evolve, based on what users are telling us they need. This may change as we continue our user research, so if you’re interested in using the PaaS but don’t see your requirements outlined below, please contact <a href="#">Jess O’Leary</a> on the product team and let her know.</p>
+      <p>Read our <a href="https://paas-roadmap.cloudapps.digital/">product roadmap documentation</a>.</p>
+  </div>
+</div>
+  <div class="grid-row">
+     <div class="column-third">
+        <h3 class="heading-medium less-top-margin">Near-term</h3>
+        <ul>
+          <li>Information assurance for personal data</li>
+          <li>Information assurance for sensitive data</li>
+          <li>Redis backing service</li>
+          <li>out of hours support</li>
+        </ul>
+     </div>
+     <div class="column-third">
+        <h3 class="heading-medium less-top-margin">Medium-term</h3>
+        <ul>
+          <li>Elasticsearch as a backing service</li>
+          <li>MongoDB as a backing service</li>
+          <li>Self service user management</li>
+          <li>Improved backing service monitoring</li>
+        </ul>
+     </div>
+     <div class="column-third">
+        <h3 class="heading-medium less-top-margin">Long-term</h3>
+        <ul>
+          <li>Private networking for apps</li>
+          <li>Self service SSL cert management</li>
+          <li>User application monitoring</li>
+        </ul>
+     </div>
+  </div>
+
+  <div class="grid-row">
+      <div class="column-full">
+            <hr>
+          <h2 class="heading-large" id="5">Built by Government for Government</h2>
+      </div>
+      <div class="column-half">
+          <p>The PaaS is built and supported by a full-time team of developers, webops engineers, product managers and user researchers at GDS.</p>
+
+          <h2 class="heading-medium">Contact us</h2>
+          <p>If you’d like to know more, please contact one of our product managers Jess O’Leary via:</p>
+          <a href="#">jessica.o’leary@digital.cabinet-office.gov.uk</a></p>
+      </div>
+      <div class="colum-half">
+          <div class="team-image">
+            <img src="/public/images/team-paas.jpg">
+          </div>
+       </div>
+  </div>
+
+ 
+
+</main>
+
+</body>
+
+{% endblock %}
+
+

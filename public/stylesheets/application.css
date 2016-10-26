@@ -1960,6 +1960,16 @@ input[type=number] {
   max-width: 100%;
 }
 
+#global-header.with-proposition .header-wrapper .header-proposition {
+  width: 50%;
+  float: right;
+}
+
+#global-header.with-proposition .header-wrapper .header-global {
+  float: left;
+  width: 45%;
+}
+
 #global-header .header-proposition #proposition-links.right-aligned li {
   float: right;
   padding: 0 0 0 15px;
@@ -1987,8 +1997,9 @@ input[type=number] {
 
 #global-header .header-proposition #proposition-name.helvetica {
   font-family: Helvetica, Arial;
-  font-weight: 400;
+  font-weight: 300;
   font-size: 19px;
+  color: red;
 }
 
 .column-full {
@@ -2011,7 +2022,9 @@ input[type=number] {
 }
 
 .team-image img {
-  max-width: 300px;
+  max-width: 460px;
+  float: right;
+  margin-top: 10px;
 }
 
 .admin {
@@ -2027,12 +2040,30 @@ input[type=number] {
   display: none;
 }
 
+.header-logo {
+  color: red;
+}
+
+.less-top-margin {
+  margin-top: 15px;
+}
+
 .product-style {
   background-color: #005EA5;
   color: #ffffff;
   margin-top: -10px;
   width: 100%;
   height: 570px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.product-style-pay {
+  background-color: #005EA5;
+  color: #ffffff;
+  margin-top: -10px;
+  width: 100%;
+  height: 675px;
   overflow-x: hidden;
   overflow-y: hidden;
 }
@@ -2064,5 +2095,6 @@ ul {
 }
 
 .design-update {
-  font-size: 14px;
+  font-size: 16px;
+  margin-top: 30px;
 }
